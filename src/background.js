@@ -1,3 +1,4 @@
-// chrome.webNavigation.onCommitted.addListener((data) => {
-//   // alert(data.url);
-// });
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  const isNotificationAllowed = true;
+  if (isNotificationAllowed) sendResponse('yes');
+});
