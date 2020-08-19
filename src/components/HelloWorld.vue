@@ -1,31 +1,16 @@
 <template>
-  <div>
-    <button v-on:click="notify">{{ test }}</button>
-    <p>{{ defaultText }}</p>
-  </div>
+  <v-app>
+    <v-main class="ma-5">
+      <v-row justify="center">
+        <h1>GTFO</h1>
+        <v-date-field>Input</v-date-field>
+      </v-row>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
-  mounted() {
-    browser.runtime.sendMessage({});
-  },
-  computed: {
-    defaultText() {
-      return browser.i18n.getMessage("extName");
-    }
-  },
-  data: function() {
-    return {
-      test: "ok"
-    };
-  },
+  name: 'HelloWorld',
 };
 </script>
-
-<style scoped>
-p {
-  font-size: 20px;
-}
-</style>

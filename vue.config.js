@@ -13,9 +13,12 @@ module.exports = {
           entry: 'src/background.js',
         },
         contentScripts: {
-          entries: { notification: 'src/notification.js' },
+          entries: {
+            notification: 'src/notification.js',
+          },
         },
       },
     },
   },
+  transpileDependencies: ['vuetify'],
 };
