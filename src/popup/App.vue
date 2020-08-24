@@ -9,7 +9,6 @@ export default {
   name: 'App',
   components: { HelloWorld },
   created() {
-    console.log('test');
     this.$vuetify.theme.dark = true;
   },
 };
@@ -18,6 +17,6 @@ export default {
 <style>
 html {
   width: 400px;
-  height: 400px;
+  height: 500px;
 }
 </style>
